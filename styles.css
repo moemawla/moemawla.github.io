@@ -1,0 +1,44 @@
+body {
+    background-color: #2F2F2F;
+    font-family: "Courier New", monospace;
+    color: #e9ecef;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #2F2F2F;
+    border-bottom: 2px solid #e85d04;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#container div {
+    flex: 25%;
+    height: 50px;
+    text-align: center;
+}
+
+.menuItem {
+    font-size: 20px;
+    color: #e85d04;
+    margin-top: 10px;
+}
+
+.menuItem a:link {
+    color: #e85d04;
+    text-decoration: none;
+}
+
+.menuItem a:visited {
+    color: #e85d04;
+}
+
+body section {
+    padding-top: 50px;
+}
