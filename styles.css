@@ -4,18 +4,19 @@ body {
     color: #e9ecef;
 }
 
-#homePage {
+#bgImage {
     background-image: url("jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
 }
 
 .centerBox {
-    color: #FFFFFF;
+    color: #e9ecef;
     font-weight: bold;
-    border: 3px solid #f1f1f1;
+    border: 3px solid #e9ecef;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,32 +52,53 @@ body {
     text-align: center;
 }
 
-.menuItem {
+#myName {
     font-family: 'Pacifico', cursive;
-    font-size: 20px;
+    font-size: 30px;
     color: #e85d04;
     margin-top: 10px;
+    margin-left: -100px;
 }
 
-.menuItem a:link {
+#myName a:link {
     color: #e85d04;
     text-decoration: none;
 }
 
-.menuItem a:visited {
+#myName a:visited {
     color: #e85d04;
+}
+
+#myName a:hover {
+    color: #ffb703;
+}
+
+#links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuItem {
+    font-size: 20px;
+    color: #e9ecef;
+}
+
+.menuItem a:link {
+    color: #e9ecef;
+    text-decoration: none;
+}
+
+.menuItem a:visited {
+    color: #e9ecef;
 }
 
 .menuItem a:hover {
     color: #ffb703;
 }
 
-#myName {
-    padding-left: 40px;
-}
-
 #container {
-    padding: 50px 50px 20px 50px;
+    padding: 100px 120px;
 }
 
 #firstAboutMe {
@@ -93,7 +115,7 @@ body {
     width: 256px;
     height: 256px;
     border-radius: 50%;
-    margin: 20px 0px 20px 50px;
+    margin: 20px 0px 20px 100px;
 }
 
 #secondAboutMe {
@@ -127,12 +149,12 @@ body {
 }
 
 #experience a:link {
-    color: #FFFFFF;
+    color: #e9ecef;
     text-decoration: none;
 }
 
 #experience a:visited {
-    color: #FFFFFF;
+    color: #e9ecef;
 }
 
 #experience a:hover {
