@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Portfolio</title>
-</head>
-<body>
-    <header>
-        <nav id="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css" />
+        <title>My Portfolio</title>
+    </head>
+    <body id="homePage">
+        <nav id="navBar">
             <div>
-                <div class="menuItem">
+                <div id="myName" class="menuItem">
                     <a href="index.html">
-                        <i class="fa fa-home" style="font-size:24px"></i>
-                        <span>Home</span>
+                        <span>Mohamad Almawla</span>
                     </a>
                 </div>
             </div>
+            <div></div>
             <div>
                 <div class="menuItem">
                     <a href="about.html">
@@ -42,8 +43,90 @@
                     </a>
                 </div>
             </div>
+            <div></div>
         </nav>
-
-    </header>
-</body>
+        <div id="container">
+            <section id="firstAboutMe">
+                <div>
+                    <p>
+                        Hardworking and challenge-loving developer, always curious about the world and eager to try new things. 
+                        Usually mistaken for a 1960s James Bond villain.
+                    </p>
+                    <br>
+                    <h4><i class="orange">email: </i>moemawla@hotmail.com</h4>
+                </div>
+                <div>
+                    <img id="profilePicture" src="myPhoto.jpg"/>
+                </div>
+            </section>
+            <section>
+                <section id="secondAboutMe">
+                    <div>
+                        <div>
+                            <span>Feel free to check out my projects on Github here -> </span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/moemawla" target="_blank">
+                                <img id="githubIcon" src="GitHub-Mark-Light-32px.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>And my Linkedin profile here -> </span>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/mohamad-almawla-61603a14a/" target="_blank">
+                                <img id="githubIcon" width="90px" src="LI-Logo.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="thirdAboutMe">
+                <div id="experience">
+                    <span class="orange"><strong>EXPERIENCE & TRAINING</strong></span>
+                    <a href="https://drive.google.com/file/d/1HZbAtlg8rUIO_Z_ZV_C81rkbmkKWV953/view?usp=sharing" target="_blank">
+                        <i class="fa fa-link" style="font-size:20px"></i> Resume
+                    </a>
+                </div>
+                <div>
+                    <h3 class="yellow">Matic, Beirut/Lebanon — <em>Software Engineer</em></h3>
+                    <h5>NOVEMBER 2018 – SEPTEMBER 2020 &nbsp;&nbsp; {Working from office}</h5>
+                    <h5>FEBRUARY 2021 – PRESENT &nbsp;&nbsp; {Working remotely}</h5>
+                    <p>
+                        <em>Matic is a SaaS enabled marketplace connecting users to registered cleaners in UAE and Kingdom of Saudi Arabia.</em>
+                        <br>
+                        <em>My role in Matic was to help in maintaining the back-end system, updating the code base to a newer framework (from Yii to Symfony 3.4), 
+                        with 100%  PHPUnit coverage, and implementing new features including integration with third-partiy services such as Zendesk, Braze and Voucherify.</em>
+                    </p>
+                    <div>
+                        <i class="fa fa-rocket orange" style="font-size:20px"></i>
+                        <span class="orange">Achievements:</span>
+                        <ul>
+                            <li><em>2019 Q2 Best Achiever “Blue Guru”.</em></li>
+                            <li><em>Promotion from “Junior Software Engineer” to “Software Engineer”.</em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="yellow">SE Factory, Beirut/Lebanon — <em>Cycle #7 Graduate</em></h3>
+                    <h5>JULY 2018 - OCTOBER 2018</h5>
+                    <p>
+                        <em>Intensive full stack web development program covering cloud architecture, front-end and back-end development, 
+                            source control, and web application security over 14 weeks of lectures, workshops and projects.</em>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="yellow">Brands For Less and others, Beirut/Lebanon — <em>IT Support and other roles</em></h3>
+                    <h5>OCTOBER 2012 - JUNE 2018</h5>
+                    <p>
+                        <em>Worked as IT support at several firms: DCS MEA, FNB trading, and Brands For Less megastores. And as a part-time delivery driver at Estafeed while studying.</em>
+                        <br>
+                        <em>Handled different tasks such as maintaining hardware devices and software programs,  networking, data-entry, customer technical support, staff technical support , etc.</em>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

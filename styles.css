@@ -1,30 +1,58 @@
 body {
-    background-color: #2F2F2F;
-    font-family: "Courier New", monospace;
+    background-color: #393a41;
+    font-family: Verdana, sans-serif;
     color: #e9ecef;
 }
 
-nav {
+#homePage {
+    background-image: url("jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.centerBox {
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.orange {
+    color: #e85d04;
+}
+
+.yellow {
+    color: #ffb703;
+}
+
+#navBar {
     position: fixed;
     width: 100%;
     top: 0px;
     left: 0px;
     background-color: #2F2F2F;
     border-bottom: 2px solid #e85d04;
-}
-
-#container {
     display: flex;
     flex-direction: row;
 }
 
-#container div {
+#navBar div {
     flex: 25%;
     height: 50px;
     text-align: center;
 }
 
 .menuItem {
+    font-family: 'Pacifico', cursive;
     font-size: 20px;
     color: #e85d04;
     margin-top: 10px;
@@ -39,6 +67,74 @@ nav {
     color: #e85d04;
 }
 
-body section {
-    padding-top: 50px;
+.menuItem a:hover {
+    color: #ffb703;
+}
+
+#myName {
+    padding-left: 40px;
+}
+
+#container {
+    padding: 50px 50px 20px 50px;
+}
+
+#firstAboutMe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#firstAboutMe div {
+    flex: 25%;
+}
+
+#profilePicture {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    margin: 20px 0px 20px 50px;
+}
+
+#secondAboutMe {
+    background-color: #2F2F2F;
+}
+
+#secondAboutMe div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#thirdAboutMe {
+    margin-top: 60px;
+}
+
+#thirdAboutMe > div {
+    margin-top: 40px;
+}
+
+#experience span {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+#experience a {
+    font-size: 20px;
+}
+
+#experience a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#experience a:visited {
+    color: #FFFFFF;
+}
+
+#experience a:hover {
+    color: #ffb703;
 }
