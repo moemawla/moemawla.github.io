@@ -46,10 +46,10 @@ body {
     flex-direction: row;
 }
 
-#navBar div {
-    flex: 25%;
+#navBar > div {
+    flex: 1;
     height: 50px;
-    text-align: center;
+    
 }
 
 #myName {
@@ -57,7 +57,12 @@ body {
     font-size: 30px;
     color: #e85d04;
     margin-top: 10px;
-    margin-left: -100px;
+    position: relative;
+}
+
+#myName span{
+    position: absolute;
+    left: 20%;
 }
 
 #myName a:link {
@@ -77,9 +82,11 @@ body {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .menuItem {
+    width: 25%;
     font-size: 20px;
     color: #e9ecef;
 }
@@ -98,7 +105,7 @@ body {
 }
 
 #container {
-    padding: 100px 120px;
+    padding: 10%;
 }
 
 #firstAboutMe {
@@ -107,8 +114,8 @@ body {
     align-items: center;
 }
 
-#firstAboutMe div {
-    flex: 25%;
+#firstAboutMe > div {
+    flex: 1;
 }
 
 #profilePicture {
@@ -122,13 +129,15 @@ body {
     background-color: #2F2F2F;
 }
 
-#secondAboutMe div {
+#secondAboutMe > div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+}
+
+#secondAboutMe span {
+    padding: 20px;
+    margin-right: 30px;
 }
 
 #thirdAboutMe {
@@ -139,24 +148,156 @@ body {
     margin-top: 40px;
 }
 
-#experience span {
+#experienceTitle span {
     font-size: 25px;
     margin-right: 20px;
 }
 
-#experience a {
+#experienceTitle a {
     font-size: 20px;
 }
 
-#experience a:link {
+#experienceTitle a:link {
     color: #e9ecef;
     text-decoration: none;
 }
 
-#experience a:visited {
+#experienceTitle a:visited {
     color: #e9ecef;
 }
 
-#experience a:hover {
+#experienceTitle a:hover {
     color: #ffb703;
+}
+
+.timePeriod {
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px) {
+    #navBar {
+        flex-direction: column;
+    }
+
+    #navBar > div {
+        height: 30px;  
+    }
+
+    #myName {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #myName span{
+        position: static;
+    }
+
+    #links {
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+    .menuItem {
+        box-sizing: border-box;
+        width: 20%;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    #firstAboutMe {
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    #firstAboutMe > div:first-of-type {
+        width: 80%;
+        text-align: center;
+    }
+
+    #firstAboutMe div{
+        font-size: 15px;
+    }
+
+    #profilePicture {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+    
+    #secondAboutMe > div {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #secondAboutMe span {
+        padding: 20px;
+        margin-right: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #thirdAboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #thirdAboutMe > div {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    #thirdAboutMe h3, #thirdAboutMe h5, #thirdAboutMe span, #thirdAboutMe p, #thirdAboutMe ul {
+        font-size: 15px;
+    }
+
+    #experienceTitle span, #experienceTitle a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    #navBar > div {
+        height: 30px;  
+    }
+
+    #links {
+        margin-top: 5px;
+    }
+
+    .menuItem {
+        width: 25%;
+        padding-left: 15px;
+        font-size: 11px;
+    }
+
+    .centerBox {
+        border: 1px solid #e9ecef;
+        width: 80%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #firstAboutMe div{
+        font-size: 12px;
+    }
+
+    #secondAboutMe span {
+        padding: 10px;
+        margin-right: 0px;
+        font-size: 10px;
+    }
+
+    #thirdAboutMe h3, #thirdAboutMe h5, #thirdAboutMe span, #thirdAboutMe p, #thirdAboutMe ul {
+        font-size: 12px;
+    }
+
+    #experienceTitle span, #experienceTitle a {
+        font-size: 15px;
+    }
 }
