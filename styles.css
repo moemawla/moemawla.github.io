@@ -2,37 +2,12 @@ body {
     background-color: #393a41;
     font-family: Verdana, sans-serif;
     color: #e9ecef;
-}
-
-#bgImage {
     background-image: url("./images/jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-}
-
-.centerBox {
-    color: #e9ecef;
-    font-weight: bold;
-    border: 3px solid #e9ecef;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-
-.orange {
-    color: #e85d04;
-}
-
-.yellow {
-    color: #ffb703;
 }
 
 #navBar {
@@ -105,8 +80,61 @@ body {
     color: #ffb703;
 }
 
+#footer {
+    background-color: #2F2F2F;
+    border-top: 2px solid #e85d04;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer img {
+    margin-right: 40px;
+}
+
+#footer span {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+#githubIcon {
+    width: 25px;
+}
+
+#linkedinIcon {
+    width: 90px;
+}
+
 #container {
     padding: 10%;
+}
+
+.centerBox {
+    color: #e9ecef;
+    font-weight: bold;
+    border: 3px solid #e9ecef;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.orange {
+    color: #e85d04;
+}
+
+.yellow {
+    color: #ffb703;
 }
 
 #firstAboutMe {
@@ -218,10 +246,6 @@ body {
     text-align: center;
 }
 
-#blogs div h2, #blogs div span {
-    opacity: 1;
-}
-
 #blogs a:link {
     color: #e9ecef;
     text-decoration: none;
@@ -268,6 +292,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 12px;
 }
 
 #pet div {
@@ -276,6 +301,7 @@ body {
 
 #pet img {
     width: 60%;
+    border-radius: 25px;
 }
 
 @media screen and (max-width:1020px) {
@@ -291,6 +317,28 @@ body {
 
     #navBar > div {
         height: 30px;  
+    }
+
+    #footer {
+        height: 40px;
+    }
+
+    #footer img {
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    
+    #footer span {
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    #githubIcon {
+        width: 15px;
+    }
+    
+    #linkedinIcon {
+        width: 60px;
     }
 
     #myName {
@@ -410,7 +458,6 @@ body {
     }
 
     #pet {
-        font-size: 12px;
         margin-top: 60px;
     }
 
@@ -436,6 +483,14 @@ body {
 }
 
 @media screen and (max-width:460px) {
+    #footer img {
+        margin-right: 10px;
+    }
+    
+    #footer span {
+        margin-left: 10px;
+    }
+
     #blogs {
         font-size: 10px;
     }
@@ -466,6 +521,20 @@ body {
         width: 25%;
         padding-left: 15px;
         font-size: 11px;
+    }
+
+    #footer {
+        justify-content: flex-end;
+    }
+
+    #footer section:first-of-type {
+        display: none;
+    }
+
+    #footer section:last-of-type {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
 
     .centerBox {
@@ -504,6 +573,10 @@ body {
 
     #pet {
         font-size: 8px;
+    }
+
+    #pet img {
+        width: 100%;
     }
 }
 
