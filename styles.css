@@ -5,7 +5,7 @@ body {
 }
 
 #bgImage {
-    background-image: url("jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
+    background-image: url("./images/jeremy-bishop-8xznAGy4HcY-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,15 +207,81 @@ body {
     max-width: 100%;
 }
 
-#blogs > article div {
+#blogs div {
     position: absolute;
-    background-color: #393a41;
     border-radius: 25px;
-    opacity: 0.7;
+    background: rgba(50, 50, 50, 0.7);
     width: 80%;
     height: 80%;
     left: 10%;
     top: 10%;
+    text-align: center;
+}
+
+#blogs div h2, #blogs div span {
+    opacity: 1;
+}
+
+#blogs a:link {
+    color: #e9ecef;
+    text-decoration: none;
+}
+
+#blogs a:visited {
+    color: #e9ecef;
+}
+
+#blogs a:hover {
+    color: #ffb703;
+}
+
+#blogs div a:last-of-type{
+    text-decoration: underline;
+}
+
+#blogPostHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#blogPostHead section:first-of-type {
+    width: 40%;
+}
+
+#blogPostHead section:last-of-type {
+    width: 50%;
+}
+
+#blogPostHead img {
+    width: 100%;
+}
+
+#blogPostBody {
+    text-align: justify;
+}
+
+#pet {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pet div {
+    text-align: center;
+}
+
+#pet img {
+    width: 60%;
+}
+
+@media screen and (max-width:1020px) {
+    #blogs {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -318,6 +384,39 @@ body {
         left: 5%;
         top: 5%;
     }
+
+    #blogPostHead {
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    #blogPostHead section:first-of-type {
+        width: 80%;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    #blogPostHead section:last-of-type {
+        width: 80%;
+    }
+    
+    #blogPostHead img {
+        width: 100%;
+    }
+    
+    #blogPostBody {
+        font-size: 15px;
+    }
+
+    #pet {
+        font-size: 12px;
+        margin-top: 60px;
+    }
+
+    #pet img {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -333,6 +432,24 @@ body {
 
     #blogs > article {
         width: 70%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    #blogs {
+        font-size: 10px;
+    }
+
+    #blogPostHead {
+        font-size: 12px;
+    }
+    
+    #blogPostHead section:first-of-type {
+        margin: 40px 0px;
+    }
+    
+    #blogPostBody {
+        font-size: 10px;
     }
 }
 
@@ -377,11 +494,21 @@ body {
     }
 
     #blogsHeader {
-        margin-top: 50px;
+        margin-top: 60px;
         font-size: 8px;
     }
 
     #blogs > article {
         width: 90%;
+    }
+
+    #pet {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:290px) {
+    #blogs {
+        font-size: 8px;
     }
 }
