@@ -44,6 +44,7 @@ body {
     border-bottom: 2px solid #e85d04;
     display: flex;
     flex-direction: row;
+    z-index: 2;
 }
 
 #navBar > div {
@@ -174,6 +175,49 @@ body {
     font-weight: bold;
 }
 
+#blogsHeader {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#blogs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#blogs > article {
+    width: 45%;
+    border: 2px solid #e85d04;
+    border-radius: 25px;
+    margin: 20px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#blogs img {
+    flex-shrink: 0;
+    visibility: hidden;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+#blogs > article div {
+    position: absolute;
+    background-color: #393a41;
+    border-radius: 25px;
+    opacity: 0.7;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+}
+
 @media screen and (max-width:800px) {
     #navBar {
         flex-direction: column;
@@ -259,6 +303,37 @@ body {
     #experienceTitle span, #experienceTitle a {
         font-size: 20px;
     }
+
+    #blogsHeader {
+        font-size: 10px;
+    }
+
+    #blogs > article {
+        margin: 10px 0px;
+    }
+
+    #blogs > article div {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #blogsHeader {
+        margin-top: 50px;
+    }
+
+    #blogs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blogs > article {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:410px) {
@@ -299,5 +374,14 @@ body {
 
     #experienceTitle span, #experienceTitle a {
         font-size: 15px;
+    }
+
+    #blogsHeader {
+        margin-top: 50px;
+        font-size: 8px;
+    }
+
+    #blogs > article {
+        width: 90%;
     }
 }
