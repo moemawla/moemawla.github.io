@@ -1,0 +1,117 @@
+#blogsHeader {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#blogs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#blogs > article {
+    width: 45%;
+    border: 2px solid #e85d04;
+    border-radius: 25px;
+    margin: 20px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#blogs img {
+    flex-shrink: 0;
+    visibility: hidden;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+#blogs section {
+    position: absolute;
+    border-radius: 25px;
+    background: rgba(50, 50, 50, 0.7);
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    text-align: center;
+}
+
+#blogs a:link {
+    color: #e9ecef;
+    text-decoration: none;
+}
+
+#blogs a:visited {
+    color: #e9ecef;
+}
+
+#blogs a:hover {
+    color: #ffb703;
+}
+
+#blogs section a:last-of-type{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1020px) {
+    #blogs {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #blogsHeader {
+        font-size: 10px;
+    }
+
+    #blogs > article {
+        margin: 10px 0px;
+    }
+
+    #blogs > article section {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #blogs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blogs > article {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    #blogs {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    #blogsHeader {
+        margin-top: 60px;
+        font-size: 8px;
+    }
+
+    #blogs > article {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:290px) {
+    #blogs {
+        font-size: 8px;
+    }
+}
