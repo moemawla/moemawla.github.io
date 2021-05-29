@@ -154,6 +154,7 @@ body {
     height: 256px;
     border-radius: 50%;
     margin: 20px 0px 20px 100px;
+    border: 2px solid #e85d04;
 }
 
 #secondAboutMe {
@@ -284,6 +285,7 @@ body {
 #pet img {
     width: 60%;
     border-radius: 25px;
+    border: 2px solid #e85d04;
 }
 
 @media screen and (max-width:1020px) {
