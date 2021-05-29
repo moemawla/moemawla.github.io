@@ -217,7 +217,7 @@ body {
     max-width: 100%;
 }
 
-#blogs div {
+#blogs section {
     position: absolute;
     border-radius: 25px;
     background: rgba(50, 50, 50, 0.7);
@@ -241,7 +241,7 @@ body {
     color: #ffb703;
 }
 
-#blogs div a:last-of-type{
+#blogs section a:last-of-type{
     text-decoration: underline;
 }
 
@@ -400,7 +400,7 @@ body {
         margin: 10px 0px;
     }
 
-    #blogs > article div {
+    #blogs > article section {
         width: 90%;
         height: 90%;
         left: 5%;
