@@ -18,7 +18,10 @@
     border: 2px solid #e85d04;
 }
 
-@media screen and (max-width:800px) {
+/*
+Tablet size
+*/
+@media screen and (max-width:768px) {
     #pet {
         margin-top: 60px;
     }
@@ -28,7 +31,10 @@
     }
 }
 
-@media screen and (max-width:410px) {
+/*
+Mobile size
+*/
+@media screen and (max-width:425px) {
     #pet {
         font-size: 8px;
     }

@@ -22,10 +22,13 @@
     margin-top: 30px;
 }
 
-#secondAboutMe > div, #secondAboutMe > article {
+#secondAboutMe > header, #secondAboutMe > section {
     margin-top: 40px;
 }
 
+/*
+Resume link 
+*/
 #experienceTitle a {
     font-size: 20px;
 }
@@ -47,7 +50,10 @@
     font-weight: bold;
 }
 
-@media screen and (max-width:800px) {
+/*
+Tablet size
+*/
+@media screen and (max-width:768px) {
     #firstAboutMe {
         margin-top: 30px;
         flex-direction: column-reverse;
@@ -76,7 +82,7 @@
         align-items: center;
     }
 
-    #secondAboutMe > div, #secondAboutMe > article {
+    #secondAboutMe > header, #secondAboutMe > section {
         width: 80%;
         margin-top: 20px;
     }
@@ -94,7 +100,10 @@
     }
 }
 
-@media screen and (max-width:410px) {
+/*
+Mobile size
+*/
+@media screen and (max-width:425px) {
     #firstAboutMe div{
         font-size: 12px;
     }

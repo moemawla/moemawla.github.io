@@ -10,6 +10,9 @@ body {
     width: 100%;
 }
 
+/*
+Contains the main content that is sandwiched by the navigation and footer bars
+*/
 #container {
     padding: 10%;
 }
@@ -22,10 +25,6 @@ body {
     color: #ffb703;
 }
 
-
-/**************
-* Navbar styles
-**************/
 #navBar {
     position: fixed;
     width: 100%;
@@ -38,12 +37,15 @@ body {
     z-index: 2;
 }
 
-#navBar > div {
+#navBar > section {
     flex: 1;
     height: 50px;
     
 }
 
+/*
+Header name in the top navigation bar
+*/
 #myName {
     font-family: 'Pacifico', cursive;
     font-size: 30px;
@@ -70,6 +72,9 @@ body {
     color: #ffb703;
 }
 
+/*
+Page links in the top navigation bar
+*/
 #links {
     margin-top: 30px;
     display: flex;
@@ -95,12 +100,6 @@ body {
 .menuItem a:hover {
     color: #ffb703;
 }
-
-
-
-/**************
-* Footer styles
-**************/
 
 #footer {
     background-color: #2F2F2F;
@@ -133,20 +132,22 @@ body {
     width: 90px;
 }
 
-@media screen and (max-width:800px) {
-
-/**************
-* Navbar styles
-**************/
-
+/*
+Tablet size
+*/
+@media screen and (max-width:768px) {
     #navBar {
+        /*Move the page links below the header name*/
         flex-direction: column;
     }
 
-    #navBar > div {
+    #navBar > section {
         height: 30px;  
     }
 
+    /*
+    Header name in the top navigation bar
+    */
     #myName {
         font-size: 20px;
         display: flex;
@@ -159,6 +160,9 @@ body {
         position: static;
     }
 
+    /*
+    Page links in the top navigation bar
+    */
     #links {
         margin-top: 10px;
         justify-content: space-around;
@@ -170,11 +174,6 @@ body {
         font-size: 15px;
         text-align: center;
     }
-
-
-/**************
-* Footer styles
-**************/
 
     #footer {
         height: 40px;
@@ -209,13 +208,11 @@ body {
     }
 }
 
-@media screen and (max-width:410px) {
-
-/**************
-* Navbar styles
-**************/
-
-    #navBar > div {
+/*
+Mobile size
+*/
+@media screen and (max-width:425px) {
+    #navBar > section {
         height: 30px;  
     }
 
@@ -229,19 +226,16 @@ body {
         font-size: 11px;
     }
 
-
-/**************
-* Footer styles
-**************/
-
-    #footer {
-        justify-content: flex-end;
-    }
-
+    /*
+    Remove the email section to fit the github and linkedin links properly
+    */
     #footer section:first-of-type {
         display: none;
     }
 
+    /*
+    Let the github and linkedin links share the whole footer
+    */
     #footer section:last-of-type {
         width: 100%;
         display: flex;

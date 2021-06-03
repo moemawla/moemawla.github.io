@@ -3,21 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohamad Almawla</title>
         <link rel="icon" href="./images/icons8-portfolio-48.png" type="image/gif" sizes="16x16">
+        <!-- Link google fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+        <!-- Link Font Awesome icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Link local css styles -->
         <link rel="stylesheet" href="./css/common.css">
         <link rel="stylesheet" href="./css/about.css">
-        <title>Mohamad Almawla</title>
     </head>
     <body>
+        <!-- Fixed navigation bar at the top of the screen -->
         <header>
             <nav id="navBar">
-                <div id="myName">
+                <section id="myName">
                     <span><a href="index.html">Mohamad Almawla</a></span>
-                </div>
-                <div id="links">
+                </section>
+                <section id="links">
                     <div class="menuItem">
                         <a href="about.html">
                             <i class="fa fa-address-book-o"></i>
@@ -36,11 +40,13 @@
                             <span>Pet</span>
                         </a>
                     </div>
-                </div>
+                </section>
             </nav>
         </header>
+        <!-- main content sandwiched by the navigation and footer bars -->
         <main id="container">
-            <header id="firstAboutMe">
+            <!-- First part of the page including a paragraph about Mohamad and a profile picture -->
+            <article id="firstAboutMe">
                 <div>
                     <h3>
                         Hardworking and challenge-loving developer, always curious about the world and eager to try new things. 
@@ -50,15 +56,16 @@
                 <div>
                     <img id="profilePicture" src="./images/myPhoto.jpg" alt="a photo of Mohamad"/>
                 </div>
-            </header>
-            <section id="secondAboutMe">
-                <div id="experienceTitle">
+            </article>
+            <!-- Second part of the page including work experience and training details -->
+            <article id="secondAboutMe">
+                <header id="experienceTitle">
                     <h2 class="orange">EXPERIENCE & TRAINING</h2>
                     <a href="./resources/resume.pdf" target="_blank">
                         <i class="fa fa-link"></i> Resume
                     </a>
-                </div>
-                <article>
+                </header>
+                <section>
                     <h3 class="yellow">Matic, Beirut/Lebanon — <em>Software Engineer</em></h3>
                     <span class="timePeriod">NOVEMBER 2018 – SEPTEMBER 2020 &nbsp;&nbsp; {Working from office}</span>
                     <br>
@@ -77,16 +84,16 @@
                             <li><em>Promotion from “Junior Software Engineer” to “Software Engineer”.</em></li>
                         </ul>
                     </div>
-                </article>
-                <article>
+                </section>
+                <section>
                     <h3 class="yellow">SE Factory, Beirut/Lebanon — <em>Cycle #7 Graduate</em></h3>
                     <span class="timePeriod">JULY 2018 - OCTOBER 2018</span>
                     <p>
                         <em>Intensive full stack web development program covering cloud architecture, front-end and back-end development, 
                             source control, and web application security over 14 weeks of lectures, workshops and projects.</em>
                     </p>
-                </article>
-                <article>
+                </section>
+                <section>
                     <h3 class="yellow">Brands For Less and others, Beirut/Lebanon — <em>IT Support and other roles</em></h3>
                     <span class="timePeriod">OCTOBER 2012 - JUNE 2018</span>
                     <p>
@@ -94,9 +101,10 @@
                         <br>
                         <em>Handled different tasks such as maintaining hardware devices and software programs,  networking, data-entry, customer technical support, staff technical support , etc.</em>
                     </p>
-                </article>
-            </section>
+                </section>
+            </article>
         </main>
+        <!-- Fixed footer bar at the bottom of the screen -->
         <footer id="footer">
             <section>
                 <span><i class="orange">email: </i>moemawla@hotmail.com</span>
